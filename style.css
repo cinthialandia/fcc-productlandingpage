@@ -1,0 +1,171 @@
+/*general style*/
+body {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+
+/*specify style*/
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    flex-grow: 1;
+    list-style: none;
+}
+
+.firstlogo {
+    flex-basis: 60%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #c83349;
+}
+
+.firstlogo img {
+    width: 220px;
+    height: 110px;
+}
+
+.title {
+    text-align: center;
+    color: #e06377;
+}
+
+.control-email {
+    text-align: center;
+}
+
+.control-email input {
+    width: 20%;
+}
+
+/*submit-button*/
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background: #c83349;
+    background-image: -webkit-linear-gradient(top, #c83349, #e06377);
+    background-image: -moz-linear-gradient(top, #c83349, #e06377);
+    background-image: -ms-linear-gradient(top, #c83349, #e06377);
+    background-image: -o-linear-gradient(top, #c83349, #e06377);
+    background-image: linear-gradient(to bottom, #c83349, #e06377);
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 13px;
+    -webkit-box-shadow: 4px 0px 5px #eeac99;
+    -moz-box-shadow: 4px 0px 5px #eeac99;
+    box-shadow: 4px 0px 5px #eeac99;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.button:hover {
+    background: #edcedc;
+    text-decoration: none;
+}
+
+/*specify style - 3 item*/
+.makeup {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.makeuplogo {
+    text-align: right;
+    padding: 0 5%;
+    width: 50px;
+}
+
+.makeupinformation {
+    flex-grow: 1;
+}
+
+.makeuplogo img {
+    width: 100%;
+    height: auto;
+}
+
+.video {
+    text-align: center;
+    margin: 2%;
+}
+
+/*specify style - princing*/
+.container-pricing ul {
+    list-style: none;
+    text-align: left;
+}
+
+.container-pricing {
+    display: flex;
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.plan {
+    flex: 1;
+    background: #f9d5e5;
+    margin: 10px;
+    border-radius: 4px;
+    border: solid 1px #c83349;
+
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-list {
+    flex-grow: 1;
+}
+
+.plan p {
+    margin: 0px;
+    padding: 0px;
+    background: #e06377;
+    font-size: 25px;
+    color: #f9d5e5;
+}
+
+.price p {
+    background: #edcedc;
+    color: #c83349
+}
+
+.footer {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    background: #c83349;
+    color: #edcedc;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.footer li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.copycin {
+    max-width: 900px;
+    margin: auto;
+    background: #c83349;
+    color: #edcedc;
+    text-align: right;
+    padding: 10px;
+}
