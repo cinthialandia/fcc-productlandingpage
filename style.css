@@ -20,15 +20,18 @@ body {
 }
 
 .menu li {
+    /*I used flex grow because I need all the items have the same. and none: Remove style for ul and li */
     flex-grow: 1;
     list-style: none;
 }
 
 .firstlogo {
+    /*I used this flex basis to put some with to permit take enough space for the logo and and do the desing */
     flex-basis: 60%;
 }
 
 .menu a {
+    /* take off the decorations */
     text-decoration: none;
     color: #c83349;
 }
@@ -43,10 +46,12 @@ body {
     color: #e06377;
 }
 
+/* Remember for flexbox this is a container for input email */
 .control-email {
     text-align: center;
 }
 
+/* Remember for flexbox this is a item for input email (children) */
 .control-email input {
     width: 20%;
 }
@@ -79,12 +84,14 @@ body {
 }
 
 .container-button input:hover {
+    /*this decoration is for put another color when you want click the button*/
     background: #eeac99;
     text-decoration: none;
 }
 
 /*specify style - 3 item*/
 .makeup {
+    /*his container used: max width and margin 0 its use for center bouth children and then you can move the elements in a better way.  */
     display: flex;
     align-items: center;
     max-width: 900px;
@@ -92,12 +99,14 @@ body {
 }
 
 .makeuplogo {
+    /*This firts element in the container works, moving the img to a direction and take the a considerable space with */
     text-align: right;
     padding: 0 5%;
     width: 50px;
 }
 
 .makeupinformation {
+    /* the element just need  grow up one more. */
     flex-grow: 1;
 }
 
@@ -113,11 +122,13 @@ body {
 
 /*specify style - princing*/
 .container-pricing ul {
+    /*just for style*/
     list-style: none;
     text-align: left;
 }
 
 .container-pricing {
+    /*First Flexbox*/
     display: flex;
     max-width: 750px;
     margin: auto;
@@ -126,6 +137,7 @@ body {
 }
 
 .plan {
+    /*Firts elemtn item and the background and the margin did the pricing desing*/
     flex: 1;
     background: #f9d5e5;
     margin: 10px;
@@ -135,15 +147,18 @@ body {
 }
 
 .plan {
+    /*Second flexbox*/
     display: flex;
     flex-direction: column;
 }
 
 .table-list {
+    /*fisrt elemento to the secondary flexbox, this thing is just to ordering the list, if u want all the items align you put this, the way just the list is the only element who moves if increment th information*/
     flex-grow: 1;
 }
 
 .plan p {
+    /*making the background*/
     margin: 0px;
     padding: 0px;
     background: #e06377;
@@ -157,6 +172,7 @@ body {
 }
 
 .footer {
+    /*Container footer*/
     display: flex;
     max-width: 900px;
     margin: auto;
@@ -167,10 +183,12 @@ body {
 }
 
 .footer li {
+    /*first element container*/
     list-style: none;
     margin: 0 5px;
 }
 
+/*Second element container*/
 .copycin {
     max-width: 900px;
     margin: auto;
@@ -181,4 +199,33 @@ body {
 }
 
 /* This query was necessary for changing the size of the elements on mobile cellphone*/
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 800px) {
+
+    /*This is the way to the elements put on columns for this view*/
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*make flexbox input email because the input looks bad on mobile views.*/
+    .control-email {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*element container has a 100% width to have enough space to write an email. */
+    .control-email input {
+        width: 100%;
+    }
+
+    /*to adjust to the view*/
+    .video {
+        display: flex;
+    }
+
+    /*Put the container in column and every pricing has their own space.*/
+    .container-pricing {
+        display: flex;
+        flex-direction: column;
+    }
+}
