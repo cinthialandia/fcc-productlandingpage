@@ -11,24 +11,24 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header id="header">
+        <nav id="nav-bar">
             <ul class="menu">
-                <li class="firstlogo"><img src="images/cinthialandia4.png" /></li>
-                <li class="icon"><a href="#makeup">Make-Up</a></li>
-                <li class="icon"><a href="#video">How It Works</a></li>
-                <li class="icon"><a href="#pricing">Pricing</a></li>
+                <li class="firstlogo"><img id="header-img" src="images/cinthialandia4.png" /></li>
+                <li><a class="nav-link" href="#makeup">Make-Up</a></li>
+                <li><a class="nav-link" href="#video">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
         </nav>
-        <h1 class="title">Lipstick, hair products and skin care</h1>
-        <div class="control-email"><input id="email" type="email" placeholder="Enter your Email address" name="email"
-                required />
-        </div>
-        <div class="container-button">
-            <button class="submit-button" type="submit">
-                Get started
-            </button>
-        </div>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <h1 class="title">Lipstick, hair products and skin care</h1>
+            <div class="control-email"><input id="email" type="email" placeholder="Enter your Email address"
+                    name="email" required />
+            </div>
+            <div class="container-button">
+                <input id="submit" class="submit-button" type="submit" value="Get started">
+            </div>
+        </form>
         <div id="makeup" class="makeup">
             <div class="makeuplogo">
                 <img src="images/makeover.png" />
@@ -57,8 +57,8 @@
                 <p>Mask and treatments, moisturiser, cleanser and exfoliator, sun care, toner and skincare sets.</p>
             </div>
         </div>
-        <div id="video" class="video">
-            <iframe width="620" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        <div class="video">
+            <iframe id="video" width="620" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </iframe>
         </div>
     </header>
@@ -79,9 +79,9 @@
                 <li>1 face cream</li>
             </ul>
             <!-- Buy button-->
-            <button class="submit-button" type="submit">
-                Select
-            </button>
+            <div class="container-button">
+                <input id="submit" class="submit-button" type="submit" value="Select">
+            </div>
         </div>
 
         <!-- Plan two -->
@@ -98,9 +98,9 @@
                 <li>2 face cream</li>
             </ul>
             <!-- Buy button-->
-            <button class="submit-button" type="submit">
-                Select
-            </button>
+            <div class="container-button">
+                <input id="submit" class="submit-button" type="submit" value="Select">
+            </div>
         </div>
         <!-- Plan three -->
         <div class="plan">
@@ -116,9 +116,9 @@
                 <li>3 face cream</li>
             </ul>
             <!-- Buy button-->
-            <button class="submit-button" type="submit">
-                Select
-            </button>
+            <div class="container-button">
+                <input id="submit" class="submit-button" type="submit" value="Select">
+            </div>
         </div>
     </div>
 </body>
