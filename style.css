@@ -131,9 +131,9 @@ body {
     /*First Flexbox*/
     display: flex;
     max-width: 750px;
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 }
 
 .plan {
@@ -218,12 +218,12 @@ body {
         width: 100%;
     }
 
-    /*to adjust to the view*/
+    /*to adjust the view*/
     .video {
         display: flex;
     }
 
-    /*Put the container in column and every pricing has their own space.*/
+    /*Put the container in column and every pricing have their own space.*/
     .container-pricing {
         display: flex;
         flex-direction: column;
